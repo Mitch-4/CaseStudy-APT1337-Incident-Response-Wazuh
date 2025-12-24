@@ -91,13 +91,44 @@ The attacker simulated an APT-style intrusion leveraging **credential-based acce
 
 ---
 
+## Investigation Methodology
+
+The investigation was conducted through structured threat hunting on both Linux and Windows endpoints using Wazuh SIEM.
+
+The threat hunting documents included in this repository represent the **entire investigative process from initial alert triage to final attribution**, including:
+
+- Log discovery and filtering
+- Process and parent-child relationship analysis
+- Authentication and access analysis
+- Privilege escalation validation
+- Persistence mechanism identification
+- Lateral movement tracking
+- Command-and-Control (C2) indicators
+- IOC extraction and correlation
+- Timeline reconstruction
+
+These threat hunting analyses form the foundation for the final incident response report and timelines.
+
+
 ## Deliverables
-- **Full Incident Response Report (PDF)**
-- Linux Attack Timeline
-- Windows Attack Timeline
-- Indicators of Compromise (IOC) tables
-- MITRE ATT&CK mapping
-- Remediation and prevention recommendations
+
+- **Final Incident Response Report**
+  - `/report/NAIPAY_IR_Report.pdf`
+
+- **Threat Hunting Analysis**
+  - Linux Endpoint Investigation (Ubuntu 24.04)
+  - Windows Endpoint Investigation (Windows Server 2022)
+
+- **Attack Timelines**
+  - `/timelines/linux_timeline.md`
+  - `/timelines/windows_timeline.md`
+
+- **Indicators of Compromise (IOCs)**
+  - `/iocs/ioc_table.md`
+
+- **Supporting Evidence**
+  - `/screenshots/` (sanitized where necessary)
+
 
 ---
 
@@ -121,10 +152,6 @@ The attacker simulated an APT-style intrusion leveraging **credential-based acce
 
 ---
 
-##  Disclaimer
-This project was conducted in a **controlled, simulated environment** for educational and defensive security purposes only.  
-All data and attacks were part of an authorized cybersecurity exercise.
 
----
 
 
